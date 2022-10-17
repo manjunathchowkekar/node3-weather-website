@@ -123,7 +123,7 @@ app.use(express.static(publicDirectoryPath))
 app.get('', (req, res) => {
 	res.render('index', {
 		title: 'Weather',
-		name: 'Manjunath',
+		name: 'https://manjunathchowkekar.netlify.app/',
 		page: 'home page',
 	})
 })
@@ -131,7 +131,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
 	res.render('about', {
 		title: 'About Me',
-		name: 'Manjunath',
+		name: 'https://manjunathchowkekar.netlify.app/',
 		page: 'about page',
 	})
 })
@@ -140,7 +140,7 @@ app.get('/help', (req, res) => {
 	res.render('help', {
 		title: 'help',
 		message: 'This is some helful text',
-		name: 'Manjunath',
+		name: 'https://manjunathchowkekar.netlify.app/',
 		page: 'help page',
 	})
 })
@@ -189,7 +189,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
 	res.render('404', {
 		title: '404',
-		name: 'Manjunath',
+		name: 'https://manjunathchowkekar.netlify.app/',
 		errorMessage: 'Help article not found',
 		page: 'error page',
 	})
@@ -199,12 +199,12 @@ app.get('*', (req, res) => {
 	res.render('404', {
 		title: '404',
 		errorMessage: 'Page not found!',
-		name: 'Manjunath',
+		name: 'https://manjunathchowkekar.netlify.app/',
 		page: 'error page',
 	})
 })
 
 app.listen(port, () => {
-	console.log('Server is up to' + port)
+	console.log('Server is up to ' + port)
 })
 
